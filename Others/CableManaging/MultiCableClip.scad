@@ -49,8 +49,9 @@ module multiOuterClip(r, angle = 15) linear_extrude(height = clipHeight) {
 	}
 }
 
-cR = 9;
-cbles = [ [6.2, 2], [6.2, 2], [6.2, 2]];
+cR = 5.5;
+cbles = [ [3, 2.5], [3, 2.5], [3, 2.5]];
 
 
 multiCableClip(cR, cbles);
+!multiOuterClip(cR);
