@@ -44,14 +44,14 @@ module multiCableClip(r, cables) linear_extrude(height = clipHeight) {
 
 module multiOuterClip(r, angle = 15) linear_extrude(height = clipHeight) {
 	slice(360 - angle) difference() {
-		circle(r = r + wallSize);
-		circle(r = r);
+		circle(r = r - 0.2 + wallSize * 1.5);
+		circle(r = r - 0.2);
 	}
 }
 
-cR = 5.5;
-cbles = [ [3, 2.5], [3, 2.5], [3, 2.5]];
+cR = 10;
+cbles = [ for(x=[1:9]) [3, 2] ];
 
 
 multiCableClip(cR, cbles);
-!multiOuterClip(cR);
+translate([0, cR*2.5, 0]) multiOuterClip(cR);
