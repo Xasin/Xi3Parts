@@ -1,11 +1,12 @@
 
 $fs = 0.8;
 
-playLooseFit = 0.2;
-playTightFit = 0.1;
+playLooseFit = 0.25;
+playTightFit = 0.125;
 
 // Linear Rail values
-linearRailDiameter = 10;
+_linearRailDiameter = 8 + playTightFit*2;
+_threadedRailDiameter = 8 + playTightFit*2;
 
 // Bearing values
 _bearingDiameter = 15 + 2*playTightFit;
