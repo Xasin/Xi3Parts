@@ -2,8 +2,6 @@ use <../../Values/Libs.scad>
 include <../../Values/Values.scad>
 use <../../Others/Utilities/Bearings.scad>
 
-railHeight = 55;
-
 rodCasingWall = 2;
 
 rodCasingDiameter = 15;
@@ -11,7 +9,7 @@ rodCasingLength = 20;
 
 rodHeigts = [[10, 90, 0], [20, 0, 0], [30, 90, 0]];
 
-blockHeight = railHeight;
+YblockHeight = railHeight;
 
 
 railMountScrewDist = rodCasingDiameter + 5.5;

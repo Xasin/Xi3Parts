@@ -11,3 +11,6 @@ _threadedRailDiameter = 8 + playTightFit*2;
 // Bearing values
 _bearingDiameter = 15 + 2*playTightFit;
 _bearingLength = 24 + 2*playTightFit;
+
+
+YrailHeight = 55;
