@@ -5,7 +5,7 @@
 
 #include <util/delay.h>
 
-#define TRIGGER_HIGH 660
+#define TRIGGER_HIGH 34
 #define TRIGGER_LOW	1000
 
 /* COMMANDS:
